@@ -11,10 +11,10 @@ pandemic.foursquareApiClientSecret = 'AW1WDIADKN4GYW1EM1FXMXTS3LNNZ5MST22TZCBPXP
 pandemic.getLocation = function(userLocation){
 	$('form').on('submit', function(e){
 		e.preventDefault();
+		initMap();
 		// console.log('help');
 	var userAddress = $('input[type=text]').val();
 	console.log(userAddress);
-	
 	$.ajax({
 	url:'https://maps.googleapis.com/maps/api/geocode/json',
 	method:'GET',
