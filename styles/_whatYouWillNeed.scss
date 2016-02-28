@@ -1,0 +1,56 @@
+section.whatYouWillNeed {
+	text-align: center;
+	.wrapper {
+		border: 2px dotted #000;
+	}
+}
+
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+	.collapse-card__heading {
+		background-color: #1a1a1a;
+		text-align: center;
+	}
+	.collapse-card__body {
+		background-color: #1a1a1a;
+	}
+}
+
+.grocery,
+.hardware,
+.pharmacy {
+	background-color: #1a1a1a;
+	padding:10px 40px;
+	list-style-type: square;
+	ul {
+		padding: 0 20px;
+		li {
+			padding: 0;
+		}
+	}
+}
+
+.grocery {
+	padding: 10px 20px;
+}
+
+.collapse-card__heading h4 {
+	color: $yellow;
+	font-size: 3rem;
+	padding: 1rem;
+	text-shadow:2px 2px 0 #1a1a1a;
+}
+
+div.collapse-card {
+	font-size: 2rem;
+	line-height: 2.5rem;
+    color: grey;
+    text-align: left;
+    border-bottom: 1px solid #1a1a1a;
+	ul {
+		list-style: square;
+		list-style-position: inside;
+		padding: 0 20px;
+	}
+}

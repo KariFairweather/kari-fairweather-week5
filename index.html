@@ -26,7 +26,7 @@
 
 	<main>
 		<div class="wrapper">
-            <div>
+            <div class="appInfo">
                 <p>You've watched Contagion, World War Z, Outbreak... etc., so you know that whenever one of the characters has to venture out for supplies there is bound to a fatality or a close call. This site hopes to minimize those moments by helping you get ready to hunker down and avoid all human contact.</p><p>Enter your address to find a nearby grocery store, hardware store and pharmacy. Then use the shopping lists to stock up and survive!</p>
             </div>
 			<form action="" id="getAddressForm">
@@ -36,9 +36,6 @@
 			</form>
 			<div class="wrapper container">
                 <div id="map"></div>
-                <!-- <div class="twitter">
-                    <a class="twitter-timeline" href="https://twitter.com/hashtag/pandemic" data-widget-id="701454148777037824">#pandemic Tweets</a>
-                </div> -->
             </div>
           <section class="yourNearest">
                 <div class="wrapper">
@@ -58,7 +55,7 @@
 
 
 	<section class="whatYouWillNeed" id="whatYouWillNeed">
-    <div class="wrapper">
+        <div class="wrapper">
     	<h2>What You Will Need</h2>
         <div class="collapse-card">
             <div class="collapse-card__heading">
@@ -107,25 +104,25 @@
             <div class="collapse-card__heading">
                 <h4 class="collapse-card__title"><i class="fa fa-medkit"></i>Pharmacy</h4>
             </div>
-            <div class="collapse-card__body pharmacy">
-                <li>Store non-prescription medications such as pain relievers, fever medication, cough and cold medications and stomach remedies on hand (i.e. acetaminophen for fever and/or pain). </li>
-                <li>Never run out of prescription medication: Be aware when you and your family members may need a refill of your prescription medications.</li>
-                <li>Assemble a first aid kit:</li>
-                    <ul>
-                        <li>first aid book</li>
-                        <li>cotton swabs/cotton balls</li>
-                        <li>bandages</li>
-                        <li>scissors</li>
-                        <li>antiseptic (i.e. hydrogen peroxide)</li>
-                        <li>antibiotic ointment</li>
-                        <li>pre-moistened towlettes</li>
-                        <li>tweezers</li>
-                        <li>disposable gloves </li>
-                    </ul>
+                <div class="collapse-card__body pharmacy">
+                    <li>Store non-prescription medications such as pain relievers, fever medication, cough and cold medications and stomach remedies on hand (i.e. acetaminophen for fever and/or pain). </li>
+                    <li>Never run out of prescription medication: Be aware when you and your family members may need a refill of your prescription medications.</li>
+                    <li>Assemble a first aid kit:</li>
+                        <ul>
+                            <li>first aid book</li>
+                            <li>cotton swabs/cotton balls</li>
+                            <li>bandages</li>
+                            <li>scissors</li>
+                            <li>antiseptic (i.e. hydrogen peroxide)</li>
+                            <li>antibiotic ointment</li>
+                            <li>pre-moistened towlettes</li>
+                            <li>tweezers</li>
+                            <li>disposable gloves </li>
+                        </ul>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 	<footer>
 		Website by <a href="http://karifairweather.com">Kari Fairweather</a>
@@ -136,7 +133,7 @@
 	<script src="javaScript/paper-collapse.min.js"></script>
     <script src="javaScript/smooth-scroll-master/dist/js/smooth-scroll.min.js"></script>
 	<script src="javaScript/script.js"></script>
-	 <script async defer
+	<script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHLUzB-tEbkZt9PgI0CKWu8AbjjBEW3CQ&callback=initMap">
     </script>
 	

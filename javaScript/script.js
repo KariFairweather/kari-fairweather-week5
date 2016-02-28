@@ -12,6 +12,9 @@ pandemic.getLocation = function(userLocation){
 	$('form').on('submit', function(e){
 		e.preventDefault();
 		initMap();
+		$('html, body').animate ({
+    	   scrollTop: $("section.yourNearest").offset().top -300
+    	},2200);
 		// console.log('help');
 	var userAddress = $('input[type=text]').val();
 	console.log(userAddress);
