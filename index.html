@@ -13,117 +13,106 @@
 <body>
 	<header id="top">
 		<div class="wrapper">
-			<nav>
-				<ul class="container">
-					<li><a data-scroll href="#top">About</a></li>
-					<li><a data-scroll href="#getAddressForm">Get Started</a></li>
-					<li><a data-scroll href="#whatYouWillNeed">What You Will Need</a></li>
-				</ul>
-			</nav>
-			<h1>Survive</h1>
-			<p class="tagline">Be Ready For The Next Pandemic</p>
-		</div>
-	</header>
+            <div class="inner-wrapper">
+                <h1>Survive</h1>
+                <div class="app-info">
+                    <p class="tagline">Be Ready For The Next Pandemic</p>
+                    <div class="appInfo">
+                        <p>You've watched Contagion, World War Z, Outbreak... etc., so you know that venturing out for supplies in an emergency is a recipe for disaster. This site hopes to help you get ready for a disaster.</p>
+                        <p>Enter your address to find a nearby grocery store, hardware store and pharmacy. Then use the shopping lists to stock up and survive!</p>
+                    </div><!-- appInfo -->
+                </div><!-- app-info -->
+                <form action="" id="getAddressForm">
+                    <h2>Enter your location:</h2>
+                    <input type="text" class="userAddress" id="userAddress" placeholder="Your Address...">
+                    <input type="submit" id=submitAddress>
+                </form>
+            </div><!-- inner-wrapper -->
+        </div><!-- wrapper --> 
+    </header><!-- #top -->
 
-	<main>
-		<div class="wrapper">
-            <div class="appInfo">
-                <p>You've watched Contagion, World War Z, Outbreak... etc., so you know that whenever one of the characters has to venture out for supplies there is bound to a fatality or a close call. This site hopes to minimize those moments by helping you get ready to hunker down and avoid all human contact.</p><p>Enter your address to find a nearby grocery store, hardware store and pharmacy. Then use the shopping lists to stock up and survive!</p>
-            </div>
-			<form action="" id="getAddressForm">
-				<h2>Enter your location:</h2>
-				<input type="text" class="userAddress" id="userAddress" placeholder="Your Address...">
-				<input type="submit" id=submitAddress>
-			</form>
-			<div class="wrapper container">
-                <div id="map"></div>
-            </div>
-          <section class="yourNearest">
-                <div class="wrapper">
-                  <h2>Your Nearest...</h2>
-                  <div class="container">
-                      <div id="groceryStoreLocationInfo">
-                      </div>
-                      <div id="hardwareStoreLocationInfo">
-                      </div>
-                      <div id="pharmacyLocationInfo">
-                      </div>
-                  </div>
-              </div>
-          </section>
-        </div>
-    </main>
-
-
-	<section class="whatYouWillNeed" id="whatYouWillNeed">
+    <main>
         <div class="wrapper">
-    	<h2>What You Will Need</h2>
-        <div class="collapse-card">
-            <div class="collapse-card__heading">
-                <h4 class="collapse-card__title"><i class="fa fa-shopping-cart"></i>Grocery Store</h4>
-            </div>
-            <div class="collapse-card__body grocery">
-                <ul>
-                    <li>Store an emergency food supply of non-perisable food such as:</li>
-                        <ul>
-                            <li>high energy foods: granola bars, fruit/nut mixture, peanut butter</li>
-                            <li>canned goods: meat fish, pasta, bottled sauces, soup, stew, vegetables, fruits</li>
-                            <li>instant soup mixes, instant cereals, crackers biscuits</li>
-                            <li>beverages such as fruit juices, evaporated or powdered milk, UHT milk, instant coffee, tea, hot chocolate mix</li>
-                            <li>staples such as salt, pepper, sugar, honey, syrup and jam</li>
-                        </ul>
-                    <li>Store a supply of bottled water for drinking, first aid, cooking and minor sanitation needs:</li>
-                        <ul>
-                            <li>72-hour to 10-day supply (1-3 litres/day/person)</li>
-                        </ul>
-                    <li>Pet supplies (if applicable)</li>
-                    <li>Toilet paper</li>
-                </ul>
-            </div>
-        </div>
-        <div class="collapse-card">
-            <div class="collapse-card__heading">
-                <h4 class="collapse-card__title"><i class="fa fa-wrench"></i></i>Hardware Store</h4>
-            </div>
-            <div class="collapse-card__body hardware">
-                <li>Store light sources in case of power outages:</li>
-                    <ul>
-                        <li>flashlights and extra batteries</li>  
-                        <li>camping lanterns with extra fuel</li>
-                        <li>candles</li>
-                        <li>matches/lighters/candles</li>
-                    </ul>
-                <li>portable radio (battery powered) and extra batteries</li>
-                <li>Fire extinguisher</li>
-                <li>Garbage bags</li>
-                <div class="collapse-card__close_handler mt1 align-right mouse-pointer">
-                    Show less <i class="fa fa-chevron-up"></i>
+            <section class="yourNearest">
+                <div class="wrapper container">
+                    <h2>Your Nearest...</h2>
+                    <div id="map"></div>
                 </div>
-            </div>
-        </div>
-        <div class="collapse-card">
-            <div class="collapse-card__heading">
-                <h4 class="collapse-card__title"><i class="fa fa-medkit"></i>Pharmacy</h4>
-            </div>
-                <div class="collapse-card__body pharmacy">
-                    <li>Store non-prescription medications such as pain relievers, fever medication, cough and cold medications and stomach remedies on hand (i.e. acetaminophen for fever and/or pain). </li>
-                    <li>Never run out of prescription medication: Be aware when you and your family members may need a refill of your prescription medications.</li>
-                    <li>Assemble a first aid kit:</li>
-                        <ul>
-                            <li>first aid book</li>
-                            <li>cotton swabs/cotton balls</li>
-                            <li>bandages</li>
-                            <li>scissors</li>
-                            <li>antiseptic (i.e. hydrogen peroxide)</li>
-                            <li>antibiotic ointment</li>
-                            <li>pre-moistened towlettes</li>
-                            <li>tweezers</li>
-                            <li>disposable gloves </li>
-                        </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section><!-- yourNearest -->
+        	<section class="whatYouWillNeed" id="whatYouWillNeed">
+            	<h2>What You Will Need</h2>
+                <div class="flex-container">
+                    <div class="collapse-card">
+                        <div class="collapse-card__heading">
+                            <h4 class="collapse-card__title grocery-title"><i class="fa fa-shopping-cart"></i>Grocery Store</h4>
+                        </div>
+                        <div class="collapse-card__body grocery">
+                            <div id="groceryStoreLocationInfo"></div>
+                            <ul>
+                                <li>Store an emergency food supply of non-perisable food such as:</li>
+                                    <ul>
+                                        <li>high energy foods: granola bars, fruit/nut mixture, peanut butter</li>
+                                        <li>canned goods: meat fish, pasta, bottled sauces, soup, stew, vegetables, fruits</li>
+                                        <li>instant soup mixes, instant cereals, crackers biscuits</li>
+                                        <li>beverages such as fruit juices, evaporated or powdered milk, UHT milk, instant coffee, tea, hot chocolate mix</li>
+                                        <li>staples such as salt, pepper, sugar, honey, syrup and jam</li>
+                                    </ul>
+                                <li>Store a supply of bottled water for drinking, first aid, cooking and minor sanitation needs:</li>
+                                    <ul>
+                                        <li>72-hour to 10-day supply (1-3 litres/day/person)</li>
+                                    </ul>
+                                <li>Pet supplies (if applicable)</li>
+                                <li>Toilet paper</li>
+                            </ul>
+                        </div><!-- collapse-card__body grocery -->
+                    </div><!-- collapse-card -->
+                    <div class="collapse-card">
+                        <div class="collapse-card__heading">
+                            <h4 class="collapse-card__title hardware-title"><i class="fa fa-wrench"></i></i>Hardware Store</h4>
+                        </div><!-- collapse-car__heading -->
+                        <div class="collapse-card__body hardware">
+                            <div id="hardwareStoreLocationInfo"></div>
+                            <li>Store light sources in case of power outages:</li>
+                                <ul>
+                                    <li>flashlights and extra batteries</li>  
+                                    <li>camping lanterns with extra fuel</li>
+                                    <li>candles</li>
+                                    <li>matches/lighters/candles</li>
+                                </ul>
+                            <li>portable radio (battery powered) and extra batteries</li>
+                            <li>Fire extinguisher</li>
+                            <li>Garbage bags</li>
+                            <!-- <div class="collapse-card__close_handler mt1 align-right mouse-pointer">
+                                Show less <i class="fa fa-chevron-up"></i>
+                            </div> -->
+                        </div><!-- collapse-card__body hardware -->
+                    </div><!-- collapse-card -->
+                    <div class="collapse-card">
+                        <div class="collapse-card__heading">
+                            <h4 class="collapse-card__title pharmacy-title"><i class="fa fa-medkit"></i>Pharmacy</h4>
+                        </div><!-- collapse-card__heading -->
+                            <div class="collapse-card__body pharmacy">
+                                <div id="pharmacyLocationInfo"></div>
+                                <li>Store non-prescription medications such as pain relievers, fever medication, cough and cold medications and stomach remedies on hand (i.e. acetaminophen for fever and/or pain). </li>
+                                <li>Never run out of prescription medication: Be aware when you and your family members may need a refill of your prescription medications.</li>
+                                <li>Assemble a first aid kit:</li>
+                                    <ul>
+                                        <li>first aid book</li>
+                                        <li>cotton swabs/cotton balls</li>
+                                        <li>bandages</li>
+                                        <li>scissors</li>
+                                        <li>antiseptic (i.e. hydrogen peroxide)</li>
+                                        <li>antibiotic ointment</li>
+                                        <li>pre-moistened towlettes</li>
+                                        <li>tweezers</li>
+                                        <li>disposable gloves </li>
+                                    </ul>
+                        </div><!-- collapse-card__body pharmacy -->
+                    </div><!-- collapse-card  --> 
+                </div><!-- flex-container -->
+            </section><!-- whatYouWillNeed -->
+        </div><!-- wrapper -->
+    </main>
 
 	<footer>
 		Website by <a href="http://karifairweather.com">Kari Fairweather</a>

@@ -1,37 +1,82 @@
-header {
-	background-color: #1a1a1a;
-	color:$yellow;
-	text-align: center;
-	font-weight: 700;
-	nav {
-		position: fixed;
-		z-index: 1;
-		top: 0;
-		left:0;
-		margin: 0 auto;
-		padding: 10px;
-		background-color: #000;
-		width: 100%;
-		li a{
-		font-size: 2rem;
-		padding: 10px 10px 0;
-		text-shadow:2px 2px 0 #1a1a1a;
+header#top {
+	background: url(../images/survive-smaller.jpg);
+	background-size: cover;
+	height:100vh;
+	color:#FFF;
+	padding-top: 10rem;
+	div.inner-wrapper {
+		width:1000px;
+		padding:6rem;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content:space-between;
+		div.app-info {
+			flex: 1 0 50%;
+		}
+		form {
+			flex: 1 0 40%;
+			padding-top:2.7rem;
 		}
 	}
 	h1 {
 		font-size: 11rem;
-		padding: 30px 0 0;
+		font-weight: normal;
 		margin: 0;
 		letter-spacing: 5px;
 		text-transform: uppercase;
-		text-shadow:5px 5px 0 #000;
+		border-bottom: 2px dotted $orange;
 	}
 	p.tagline {
+		padding-top: 1rem;
 		font-size: 3rem;
-		// color:#890600;
-		color:#BC1414;
-		border-top: 2px dotted $yellow;
+		color:#FFF;
 		margin: 0;
-		padding: 5px 0 10px;
+	}
+	div.appInfo {
+		padding:2rem 2rem 0 0;
+		line-height: 1.5;
+	}
+	form {
+		h2 {
+			font-size: 2rem;
+			padding:4rem 0 1rem;
+			margin: 0;
+			font-weight: normal;
+			text-transform: uppercase;
+		}
+		label {
+			font-size: 3rem;
+			text-transform: capitalize;
+		}
+		input[type=text] {
+			font-size: 3rem;
+			border: none;
+			border: .1rem solid #FFF;
+			background: transparent;
+			width: 100%;
+			color: #FFF;
+			padding:1rem;
+			&:focus {
+				background: transparent;
+				outline: none;
+			}
+		}
+		input::-webkit-input-placeholder {
+			color: #FFF;
+		}
+		input[type=submit] {
+			width: 100%;
+			margin-top:2rem;
+			font-size: 2.5rem;
+			background: $orange;
+			border: .2rem solid $orange;
+			color: #FFF;
+			&:focus {
+				outline:none;
+			}
+			&:hover {
+				border: .2rem solid #FFF;
+			}
+		}
 	}
 }

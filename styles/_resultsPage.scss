@@ -1,0 +1,97 @@
+main {
+	section.yourNearest {
+		max-width: 100%;
+		.container {
+			max-width: 100%;
+			margin: 0 auto;
+		}
+		#map {
+			width:100%;
+			height: 300px;
+		}
+	}	
+	section.whatYouWillNeed {
+		text-align: center;
+		padding: 4rem 0 5rem;
+	}
+	.flex-container {
+		display: flex;
+		flex-flow:row wrap;
+		.collapse-card {
+			flex: 1 0 20%;
+		}
+	}
+	h2 {
+		font-size: 3rem;
+	}
+	.collapse-card__heading {
+		background-color: #FFF;
+		text-align: center;
+	}
+	.collapse-card__body {
+		background-color: #FFF;
+	}
+	.storeInfo {
+		p.contactInfo {
+			font-size: 2rem;
+			font-weight: 400;
+			margin: 0;
+			padding: 0;
+		}
+		p.contactNum {
+			font-size: 2rem;
+			font-size: 400;
+			margin: 0;
+			padding: 0;
+		}
+	}
+	.grocery,
+	.hardware,
+	.pharmacy {
+		background-color: #FFF;
+		padding:10px 40px;
+		list-style-type: square;
+		ul {
+			padding: 0 20px;
+			li {
+				padding: 0;
+			}
+		}
+	}
+	.grocery {
+		padding: 10px 20px;
+	}
+	.collapse-card__heading h4 {
+		font-weight: normal;
+		font-size: 3rem;
+	}
+	.grocery-title {
+		color: #8E61FF;
+	}
+	.hardware-title {
+		color: #678EFF;
+	}
+	.pharmacy-title {
+		color: #00E842;
+	}
+	div.collapse-card {
+		font-size: 2rem;
+		line-height: 2.5rem;
+	    color: grey;
+	    text-align: left;
+	    border-bottom: 1px solid #1a1a1a;
+		ul {
+			list-style: square;
+			list-style-position: inside;
+			padding: 0 20px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
