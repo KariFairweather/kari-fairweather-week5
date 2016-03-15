@@ -1,5 +1,6 @@
 main {
 	section.yourNearest {
+		padding-top: 2rem;
 		max-width: 100%;
 		.container {
 			max-width: 100%;
@@ -10,6 +11,18 @@ main {
 			height: 300px;
 		}
 	}	
+	div.results {
+		margin: 0 auto;
+		padding: 0 2rem;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		div#groceryStoreLocationInfo,
+		div#hardwareStoreLocationInfo,
+		div#pharmacyLocationInfo {
+			flex: 1 0 30%;
+		}
+	}
 	section.whatYouWillNeed {
 		text-align: center;
 		padding: 4rem 0 5rem;
@@ -18,7 +31,8 @@ main {
 		display: flex;
 		flex-flow:row wrap;
 		.collapse-card {
-			flex: 1 0 20%;
+			flex: 1 0 100%;
+			// margin:1rem;
 		}
 	}
 	h2 {
@@ -33,13 +47,13 @@ main {
 	}
 	.storeInfo {
 		p.contactInfo {
-			font-size: 2rem;
+			font-size: 1.6rem;
 			font-weight: 400;
 			margin: 0;
 			padding: 0;
 		}
 		p.contactNum {
-			font-size: 2rem;
+			font-size: 1.6rem;
 			font-size: 400;
 			margin: 0;
 			padding: 0;

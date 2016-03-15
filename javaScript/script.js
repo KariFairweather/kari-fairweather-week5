@@ -13,7 +13,7 @@ pandemic.getLocation = function(userLocation){
 		e.preventDefault();
 		initMap();
 		$('html, body').animate ({
-    	   scrollTop: $("section.yourNearest").offset().top -300
+    	   scrollTop: $("a#goHere").offset().top -400
     	},2200);
 		// console.log('help');
 	var userAddress = $('input[type=text]').val();
@@ -125,9 +125,12 @@ pandemic.displayGroceryStoreInfo = function(data) {
 	// console.log(storeInfo);
 	var storeType = $('<h3>').text('Grocery Stores');
 	$('#groceryStoreLocationInfo').prepend(storeType);
+	var labelIndex = 0;
 	$.each(storeInfo, function(i, storeInfo){
 		// console.log(storeInfo.venue.name);
-		var storeName = $('<h4>').text(storeInfo.venue.name);
+		var index = labelIndex += 1;
+		//Add label to each marker on the map
+		var storeName = $('<h4>').text(index + ' ' + storeInfo.venue.name);
 		var storeContactInfo = $('<p>').addClass('contactInfo').text(storeInfo.venue.location.address);
 		var storeNum = $('<p>').addClass('contactNum').text(storeInfo.venue.contact.formattedPhone);
 		var finalStoreInfo = $('<div>').addClass('storeInfo').append(storeName, storeContactInfo, storeNum);
@@ -140,17 +143,24 @@ pandemic.displayGroceryStoreInfo = function(data) {
 		pandemic.map.setCenter(pandemic.userLatLng)
 		//add markers to the map
 		var image = 'http://maps.google.com/mapfiles/ms/icons/purple-dot.png'
+
+		//Create variable to store marker Labels
+		var labels = '123';
 		var marker = new google.maps.Marker({
 			position: {
 				lat: storeLatitude,
 				lng: storeLongitude
 			},
 			map: pandemic.map,
-			// title:'Hello World'
-			icon: image
+			label: {
+				text: labels[index% labels.length],
+				color: 'white'
+			},
+			// icon: image,
 		});
 	});
 }
+
 
 //************** Display Hardware Store Info **************
 pandemic.displayHardwareStoreInfo = function(data) {
@@ -170,15 +180,15 @@ pandemic.displayHardwareStoreInfo = function(data) {
 		var storeLongitude = storeInfo.venue.location.lng;
 		// console.log(storeLongitude);
 		pandemic.map.setCenter(pandemic.userLatLng)
-		var image = 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+		// var image = 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
 		var marker = new google.maps.Marker({
 			position: {
 				lat: storeLatitude,
 				lng: storeLongitude
 			},
-			map: pandemic.map,
+			map: pandemic.map
 			// title:'Hello World'
-			icon: image
+			// icon: image
 		});
 	});
 };
@@ -201,7 +211,7 @@ pandemic.displayDrugStoreInfo = function(data) {
 		var storeLongitude = storeInfo.venue.location.lng;
 		// console.log(storeLongitude);
 		pandemic.map.setCenter(pandemic.userLatLng)
-		var image = 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+		// var image = 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
 		var marker = new google.maps.Marker({
 			position: {
 				lat: storeLatitude,
@@ -209,7 +219,7 @@ pandemic.displayDrugStoreInfo = function(data) {
 			},
 			map: pandemic.map,
 			// title: storeName,
-			icon: image
+			// icon: image
 		});
 	});
 };

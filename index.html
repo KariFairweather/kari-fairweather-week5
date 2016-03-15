@@ -15,11 +15,12 @@
 		<div class="wrapper">
             <div class="inner-wrapper">
                 <h1>Survive</h1>
+                <p class="tagline">Be Ready For The Next Pandemic</p>
                 <div class="app-info">
-                    <p class="tagline">Be Ready For The Next Pandemic</p>
                     <div class="appInfo">
-                        <p>You've watched Contagion, World War Z, Outbreak... etc., so you know that venturing out for supplies in an emergency is a recipe for disaster. This site hopes to help you get ready for a disaster.</p>
-                        <p>Enter your address to find a nearby grocery store, hardware store and pharmacy. Then use the shopping lists to stock up and survive!</p>
+                        <p>Enter your location below to find a nearby grocery store, hardware store and pharmacy. 
+                        <br >
+                        Use the shopping lists to stock up and survive!</p>
                     </div><!-- appInfo -->
                 </div><!-- app-info -->
                 <form action="" id="getAddressForm">
@@ -38,16 +39,22 @@
                     <h2>Your Nearest...</h2>
                     <div id="map"></div>
                 </div>
+                <div class="results">
+                    <div id="groceryStoreLocationInfo"></div>
+                    <div id="hardwareStoreLocationInfo"></div>
+                    <div id="pharmacyLocationInfo"></div>
+                <a id="goHere"></a>
+                </div><!-- results -->
             </section><!-- yourNearest -->
+
         	<section class="whatYouWillNeed" id="whatYouWillNeed">
-            	<h2>What You Will Need</h2>
+                <h2>What You Will Need</h2>
                 <div class="flex-container">
                     <div class="collapse-card">
                         <div class="collapse-card__heading">
                             <h4 class="collapse-card__title grocery-title"><i class="fa fa-shopping-cart"></i>Grocery Store</h4>
                         </div>
                         <div class="collapse-card__body grocery">
-                            <div id="groceryStoreLocationInfo"></div>
                             <ul>
                                 <li>Store an emergency food supply of non-perisable food such as:</li>
                                     <ul>
@@ -71,7 +78,6 @@
                             <h4 class="collapse-card__title hardware-title"><i class="fa fa-wrench"></i></i>Hardware Store</h4>
                         </div><!-- collapse-car__heading -->
                         <div class="collapse-card__body hardware">
-                            <div id="hardwareStoreLocationInfo"></div>
                             <li>Store light sources in case of power outages:</li>
                                 <ul>
                                     <li>flashlights and extra batteries</li>  
@@ -92,7 +98,6 @@
                             <h4 class="collapse-card__title pharmacy-title"><i class="fa fa-medkit"></i>Pharmacy</h4>
                         </div><!-- collapse-card__heading -->
                             <div class="collapse-card__body pharmacy">
-                                <div id="pharmacyLocationInfo"></div>
                                 <li>Store non-prescription medications such as pain relievers, fever medication, cough and cold medications and stomach remedies on hand (i.e. acetaminophen for fever and/or pain). </li>
                                 <li>Never run out of prescription medication: Be aware when you and your family members may need a refill of your prescription medications.</li>
                                 <li>Assemble a first aid kit:</li>

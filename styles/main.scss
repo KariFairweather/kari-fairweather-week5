@@ -1,6 +1,4 @@
 $baseFont:'Roboto', sans-serif;;
-$yellow: #DBAC00;
-$red: #BC1414;
 $orange: #EC5A00;
 
 @import "_normalize";
@@ -15,8 +13,9 @@ html {
 body {
 	font-size: 16px;
 	font-size: 1.6rem;
-	background-color: #FFF;
+	background-color: #F68517;
 	font-family: $baseFont;
+	color: #FFF;
 }
 
 ul {
@@ -37,15 +36,16 @@ a {
 }
 
 h3 {
-	font-size: 2.5rem;
+	font-size: 3rem;
+	font-weight: 400;
 	text-transform: uppercase;
 	margin: 0;
-	border-bottom: 1px solid #000;
 }
 
 h4 {
 	font-size: 2.3rem;
-	text-transform: uppercase;
+	font-weight: 900;
+	// text-transform: uppercase;
 	margin: 0;
 	padding-top:10px;
 }
@@ -57,7 +57,7 @@ p {
 .wrapper {
 	max-width: 1200px;
 	margin: 10px auto;
-	padding: 10px 20px;
+	padding: 2rem 2rem;
 }
 
 .inner-wrapper {
@@ -70,3 +70,7 @@ p {
 	flex-flow: row wrap;
 	justify-content: center;
 }
+
+
+
+

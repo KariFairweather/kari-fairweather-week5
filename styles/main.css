@@ -170,53 +170,49 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 header#top {
   background: url(../images/survive-smaller.jpg);
   background-size: cover;
+  background-position: center;
   height: 100vh;
   color: #FFF;
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 
 header#top div.inner-wrapper {
-  width: 1000px;
-  padding: 6rem;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
-header#top div.inner-wrapper div.app-info {
-  flex: 1 0 50%;
-}
-
-header#top div.inner-wrapper form {
-  flex: 1 0 40%;
-  padding-top: 2.7rem;
+  width: 75%;
+  padding: 4rem;
 }
 
 header#top h1 {
+  text-align: center;
   font-size: 11rem;
   font-weight: normal;
-  margin: 0;
+  margin: 0 auto;
   letter-spacing: 5px;
   text-transform: uppercase;
   border-bottom: 2px dotted #EC5A00;
 }
 
 header#top p.tagline {
-  padding-top: 1rem;
+  padding: 1rem 0;
+  text-align: center;
+  width: 100%;
   font-size: 3rem;
   color: #FFF;
-  margin: 0;
+  margin: 0 auto;
+}
+
+header#top div.appInfo,
+header#top form {
+  margin: 0 auto;
+  padding: 1rem 0;
 }
 
 header#top div.appInfo {
-  padding: 2rem 2rem 0 0;
   line-height: 1.5;
+  font-size: 2rem;
 }
 
 header#top form h2 {
-  font-size: 2rem;
-  padding: 4rem 0 1rem;
-  margin: 0;
+  font-size: 1rem 2rem;
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -262,15 +258,128 @@ header#top form input[type=submit]:hover {
   border: .2rem solid #FFF;
 }
 
+@media (max-width: 1040px) {
+  header#top {
+    padding-top: 5.5rem;
+  }
+  header#top div.inner-wrapper {
+    padding: 4rem;
+  }
+  header#top div.inner-wrapper div.app-info {
+    flex: 1 0 100%;
+  }
+  header#top div.inner-wrapper form {
+    flex: 1 0 100%;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  header#top {
+    padding-top: 6rem;
+  }
+  header#top div.inner-wrapper {
+    padding: 4rem;
+  }
+  header#top div.inner-wrapper h1 {
+    font-size: 9rem;
+  }
+}
+
+@media (max-width: 541px) {
+  header#top {
+    padding-top: 2.5rem;
+  }
+  header#top h1 {
+    font-size: 9rem;
+  }
+}
+
+@media (max-width: 510px) {
+  header#top {
+    padding-top: 3rem;
+  }
+  header#top div.inner-wrapper {
+    padding: 3.5rem;
+  }
+  header#top div.inner-wrapper h1 {
+    font-size: 9rem;
+  }
+  header#top div.inner-wrapper p.tagline {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 491px) {
+  header#top {
+    padding-top: 2rem;
+  }
+  header#top div.inner-wrapper {
+    max-width: 100%;
+    padding: 3.5rem;
+  }
+  header#top div.inner-wrapper h1 {
+    font-size: 8.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header#top {
+    padding-top: 5rem;
+  }
+  header#top div.inner-wrapper {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+  header#top div.inner-wrapper h1 {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 420px) {
+  header#top {
+    padding-top: 5rem;
+  }
+  header#top div.inner-wrapper {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+  header#top div.inner-wrapper h1 {
+    font-size: 7.2rem;
+  }
+  header#top div.inner-wrapper div.app-info {
+    font-size: 1.4rem;
+  }
+  header#top div.inner-wrapper p.tagline {
+    font-size: 2rem;
+  }
+  header#top div.inner-wrapper form h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 420px) {
+  header#top {
+    padding-top: 5rem;
+  }
+  header#top div.inner-wrapper h1 {
+    font-size: 6rem;
+  }
+  header#top div.inner-wrapper p.tagline {
+    font-size: 1.8rem;
+  }
+}
+
 footer {
   text-align: center;
   background-color: #1a1a1a;
   margin-top: 10px;
   padding: 10px;
-  color: #DBAC00;
+  color: #FFF;
 }
 
 main section.yourNearest {
+  padding-top: 2rem;
   max-width: 100%;
 }
 
@@ -284,6 +393,20 @@ main section.yourNearest #map {
   height: 300px;
 }
 
+main div.results {
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+main div.results div#groceryStoreLocationInfo,
+main div.results div#hardwareStoreLocationInfo,
+main div.results div#pharmacyLocationInfo {
+  flex: 1 0 30%;
+}
+
 main section.whatYouWillNeed {
   text-align: center;
   padding: 4rem 0 5rem;
@@ -295,7 +418,7 @@ main .flex-container {
 }
 
 main .flex-container .collapse-card {
-  flex: 1 0 20%;
+  flex: 1 0 100%;
 }
 
 main h2 {
@@ -312,14 +435,14 @@ main .collapse-card__body {
 }
 
 main .storeInfo p.contactInfo {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 400;
   margin: 0;
   padding: 0;
 }
 
 main .storeInfo p.contactNum {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-size: 400;
   margin: 0;
   padding: 0;
@@ -387,8 +510,9 @@ html {
 body {
   font-size: 16px;
   font-size: 1.6rem;
-  background-color: #FFF;
+  background-color: #F68517;
   font-family: "Roboto", sans-serif;
+  color: #FFF;
 }
 
 ul {
@@ -411,15 +535,15 @@ a:hover {
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 400;
   text-transform: uppercase;
   margin: 0;
-  border-bottom: 1px solid #000;
 }
 
 h4 {
   font-size: 2.3rem;
-  text-transform: uppercase;
+  font-weight: 900;
   margin: 0;
   padding-top: 10px;
 }
@@ -431,7 +555,7 @@ p {
 .wrapper {
   max-width: 1200px;
   margin: 10px auto;
-  padding: 10px 20px;
+  padding: 2rem 2rem;
 }
 
 .inner-wrapper {
